@@ -7,7 +7,7 @@
                 </button>
                 <h4 class="alert-heading ">Warning!</h4>
                 <hr>
-                <p>The following errors prevented the article from being saved:</p>
+                <p>The following errors prevented the <%= obj.class.name.downcase %> from being saved:</p>
                 <ul>
                     <% obj.errors.full_messages.each do |msg| %>
                         <li><%= msg %></li>
