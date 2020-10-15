@@ -3,7 +3,7 @@
     <div class="col-8">
         <div class="card text-center shadow-sm rounded-lg">
             <div class="card-header font-italic">
-                by Simon Lee
+                by <%= @article.user.username if @article.user %>
             </div>
             <div class="card-body">
                 <div class="card-text text-left"><%= simple_format(@article.description) %></div>
