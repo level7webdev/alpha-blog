@@ -1,4 +1,4 @@
-<% if @article.errors.any? %>
+<% if obj.errors.any? %>
     <div class="row justify-content-center mt-4">
         <div class="col-10">
             <div class="alert alert-danger alert-dismissalbe fade show shadow-sm p-4 mb-3" role="alert">
@@ -9,7 +9,7 @@
                 <hr>
                 <p>The following errors prevented the article from being saved:</p>
                 <ul>
-                    <% @article.errors.full_messages.each do |msg| %>
+                    <% obj.errors.full_messages.each do |msg| %>
                         <li><%= msg %></li>
                     <% end %>
                 </ul>
