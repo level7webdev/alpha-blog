@@ -53,3 +53,42 @@ a:focus {
 #sticky-footer {
   flex-shrink: none;
 }
+
+// Pagination styling
+.apple_pagination {
+  background: #e4e4e4;
+  border-radius: 100px;
+  text-align: center;
+  padding: 1em;
+  cursor: default;
+}
+.apple_pagination a,
+.apple_pagination span {
+  padding: 0.2em 0.3em;
+}
+.apple_pagination .disabled {
+  color: #aaaaaa;
+}
+.apple_pagination .current {
+  font-style: normal;
+  font-weight: bold;
+  color: #dadada;
+  background-color: #111a19;
+  display: inline-block;
+  width: 1.4em;
+  -moz-border-radius: 0.3em;
+  -webkit-border-radius: 0.3em;
+  border-radius: 0.3em;
+}
+.apple_pagination a {
+  text-decoration: none;
+  color: black;
+}
+.apple_pagination a:hover,
+.apple_pagination a:focus {
+  color: #aaaaaa;
+  background-color: #111a19;
+  -moz-border-radius: 0.3em;
+  -webkit-border-radius: 0.3em;
+  border-radius: 0.3em;
+}

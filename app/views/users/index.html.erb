@@ -1,3 +1,17 @@
 <h1 class="text-center">Alpha Blog Users</h1>
 
+<div class="apple_pagination my-4">
+    <div class="page_info">
+        <%= page_entries_info @users %>
+    </div>
+    <%= will_paginate @users, :container => false %>
+</div>
+
 <%= render 'user' %>
+
+<div class="apple_pagination my-4">
+    <div class="page_info">
+        <%= page_entries_info @users %>
+    </div>
+    <%= will_paginate @users, :container => false %>
+</div>
