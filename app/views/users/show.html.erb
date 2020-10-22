@@ -5,7 +5,7 @@
 <div class="text-center">
     <% if logged_in? && @user == current_user %>
         <%= link_to "Edit your profile", edit_user_path(@user), class: "btn btn-outline-info my-4" %>
-        <%= link_to 'Delete Profile', user_path(@user), class: "btn btn-outline-danger", method: :delete, data: { confirm: "Are you sure?" } %>
+        <%= link_to 'Delete User', user_path(@user), class: "btn btn-outline-danger", method: :delete, data: { confirm: "Are you sure?" } %>
     <% end %>
 </div>
 
