@@ -1,0 +1,16 @@
+<% @categories.each do |category| %>
+    <div class="row mt-4 justify-content-md-center">
+        <div class="col-6">
+            <div class="card text-center shadow-sm rounded-lg">
+                <div class="card-body">
+                    <h3 class="card-title"><%= link_to category.name, category_path(category), class: "text-dark" %></h5>
+                    <div class="card-text mt-3"><%= pluralize(category.articles.count, "article") %></div>
+                </div>
+                <div class="card-footer text-muted">
+                    <small>Created <%= time_ago_in_words(category.created_at) %> ago,
+                    edited <%= time_ago_in_words(category.updated_at) %> ago.</small>
+                </div>
+            </div>
+        </div>
+    </div>
+<% end %>
